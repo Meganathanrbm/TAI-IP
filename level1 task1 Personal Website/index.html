@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Home sections -->
+    <section id="Home" class="home">
+      <!-- Nav bar -->
+      <nav>
+        <h2 class="title">Potfolio</h2>
+        <input class="threedot-check" type="checkbox" name="" id="" />
+        <div class="threedot">
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+        </div>
+        <ul class="nav-ul" id="navul">
+          <li><a onclick="toggleSelection()" href="#Home">Home</a></li>
+          <li><a  onclick="toggleSelection()" href="#About">About</a></li>
+          <li><a  onclick="toggleSelection()" href="#Skills">Skills</a></li>
+          <li><a  onclick="toggleSelection()" href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="home-context">
+          <p>Web developer</p>
+          <h1>Hi, I'm <span class="title-text">Meganathan</span></h1>
+         <button class="button-cv" role="button"><a href="https://drive.google.com/file/d/1QN8kvslNkxAkNhg3STX-lNAzwjuKqSia/view?usp=sharing">download cv</a></button>
+        </div>
+        <div class="profile-pic"></div>
+        <img class="profile-pic-img" src="./images/profile-pic.png" alt="" />
+      </div>
+    </section>
+    <!-- About Sections -->
+    <section id="About" class="about">
+      <div class="about-content">
+        <h2 class="about-title">About me</h2>
+        <div class="about-img-section">
+          <div class="about-img">
+            <img class="about-img-pic" src="./images/profile-pic.png" alt="" />
+          </div>
+        </div>
+        <p class="about-para">
+          Hello! I'm Meganathan, a 20-year-old web developer specializing in the
+          captivating world of the MERN stack. Proficient in HTML, CSS,
+          Bootstrap, JavaScript, Sass, Mongodb, ejs, Express, Redux, REST API,
+          and DBMS, I create visually enticing user interfaces. Through the
+          magic of React.js, I bring front-end dynamics to life, and with the
+          strength of Node.js, I build robust back-end solutions. Let's join
+          forces and transform your digital aspirations into an irresistibly
+          engaging reality!
+        </p>
+      </div>
+      <div class="about-timeline">
+        <section class="timeline-area">
+          <div class="">
+            <h2>Higher Secondary</h2>
+            <h3>St joseph's higher secondary school</h3>
+            <h4>2018 - 2020</h4>
+          </div>
+          <div class="">
+            <h2>B.Sc. Computer Science</h2>
+            <h3>Muthurangam Govt. Arts College - Vellore</h3>
+            <h4>2020 - 2023</h4>
+          </div>
+          <div class="">
+            <h2>MCA</h2>
+            <h3>Presidency college - chennai</h3>
+            <h4>2023 - 2025</h4>
+          </div>
+          <div class="">
+            <h2>Web Development and Design</h2>
+            <h3>Self-learning</h3>
+            <h4>2023 - Present</h4>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Skills Sections -->
+    <section id="Skills" class="skills">
+      <h2 class="skills-title">Skills Showcase</h2>
+      <p class="skills-para">
+        I am from Tamilnadu and currently living in Chennai, I am doing Master
+        in Computer Application and i will graduate in the year 2025, I am Web
+        Developer and currently working as an Intern.
+      </p>
+      <div class="skills-container">
+        <div class="tech-icon">
+          <img src="./images/html.png" alt="HTML" />
+          <h5>HTML</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/css.png" alt="CSS" />
+          <h5>CSS</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/javascript.png" alt="JavaScript" />
+          <h5>JavaScript</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/bootstrap.png" alt="Bootstrap" />
+          <h5>Bootstrap</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/react.png" alt="React" />
+          <h5>React js</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/node.png" alt="Node.js" />
+          <h5>Node.js</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/mongodb.png" alt="MongoDB" />
+          <h5>MongoDB</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/sass.png" alt="Sass" />
+          <h5>Sass</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/git.png" alt="Git" />
+          <h5>Git</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/mu5.png" alt="Mu5" />
+          <h5>Material UI</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/redux.png" alt="Redux" />
+          <h5>Redux</h5>
+        </div>
+        <div class="tech-icon">
+          <img src="./images/api.png" alt="API" />
+          <h5>API</h5>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Sections -->
+    <section id="Contact" class="contact">
+      <div class="contact-container">
+        <div class="content-section">
+          <div class="contact-content">
+            <h2 class="contact-title">contact</h2>
+            <p class="contact-para">
+              Feel free to reach out ot me through the contact information
+              provided below. Whether you have a project in mind, want to
+              collaborate, or just have a question, I'm here to connect. I value
+              open communication and look foward to hearing
+              from you. Let's bring our ideas to life and make meaningful
+              connections!
+            </p>
+            <br>
+            <p class="email">Email : <a href="mailto:meganathanrbm@gmail.com">meganathanrbm@gmail.com</a></p>
+            <p class="tel">Tel : <a href="">+91 93616 74727</a></p>
+          </div>
+          <div class="contact-form">
+            <form action="">
+              <input type="text" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" id="" required>
+              <textarea name="message" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+              <button class="send">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="social-media">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/mega-nathan-rbm/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a></li>
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/me__nathan_/?igshid=YmMyMTA2M2Y%3D"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Sections -->
+    <footer class="footer">
+      <p>copyright &copy; Made with ❤️ by Meganathan.</p>
+    </footer>
+
+    <script>
+      function toggleSelection(){
+        const checkbox = document.querySelector(".threedot-check")
+        checkbox.checked = false;
+      }
+    </script>
+  </body>
+</html>
