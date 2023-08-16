@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: lightgray;
+    padding: 25px 15%;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    background-color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+section{
+    padding: 25px;
+}
+/* section 1 */
+.section1{
+    flex: 2;
+    background-color: #fff;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+}
+.searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+.searchInput{
+    width: 70%;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+}
+.searchInput::placeholder{
+    color: #000;
+    font-size: 14px;
+}
+.searchSubmit{
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(255, 165, 0);
+    border: none;
+}
+.searchSubmit:hover{
+    background-color: rgb(255, 165, 0,0.5);
+}
+.weather-img{
+    height: 30%;
+    margin:0 auto;
+    width: 100%;
+    object-fit: cover;
+}
+.section1 h1{
+    font-size: 5.5rem;
+    font-weight: 100;
+    display: block;
+    line-height: 6.5rem;
+}
+.daytime, .daytime .day{
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+    margin: 5px 0;
+    line-height: 2.2rem;
+}
+
+.daytime span{
+    color: gray;
+    display: inline;
+}
+.section1 hr{
+    margin: 15px 0;
+}
+.section1 .cloud , .section1 .rain{
+    font-size: 1rem;
+    display: block;
+    margin: 15px 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.section1 .cloud{
+
+    font-size: 1.1rem;
+}
+.section1 .main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.main-img{
+    width:4rem;
+    height: 4rem;
+    margin: 0;
+   
+}
+
+.city-name{
+    text-align: center;
+    line-height: 3rem;
+    padding: .2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+/* section 2 */
+.section2{
+    background-color: #EEEEEE;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.todays{
+    flex: 2;
+}
+.todays-title{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.todays-container , .week-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .box {
+    width: calc(33.33% - 20px); /* Adjust box width and margin according to your design */
+    height:calc(48% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px 10px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+        .todays-container{
+            height: fit-content;
+        }
+        .box {
+          width: calc(50% - 20px);
+        }
+      }
+
+.box-title{
+    margin-bottom: auto;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: gray;
+}
+.box-content{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: auto;
+}
+.windSpeed-content{
+    font-size: 2rem;
+}
+.sunrise-content, .sunset-content{
+    font-size: 1.5rem;
+}
+
+/* Weeek */
+.week{
+    flex:1;
+}
+.week-box{
+    height: 90%;
+    background-color: #fff;
+    width: calc(20% - 20px);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.week-box p{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+
+/* media query for mobile */
+
+@media screen and (max-width:500px) {
+    body{
+        overflow:auto;
+        padding: 0;
+        min-height: 100vh;
+    }
+    main{
+        flex-direction: column;
+        overflow: auto;
+        border-radius: 0;
+    }
+    .section1{
+        min-height: 100vh;
+    }
+    .section2{
+        flex-direction: column;
+        min-height: 100vh;
+        height: fit-content;
+    }
+    .todays{
+        flex: 1;
+    }
+    .todays-container{
+        height: 50vh;
+    }
+    .week{
+        margin-top: 130px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+
+    }
+    .week-box{
+        width: calc(20% - 10px);
+        height: fit-content;
+        padding: 15px 0;
+    }
+    .week-box img{
+        width: 100%;
+    }
+    .week-container {
+        display: flex;
+
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        justify-content: space-between;
+    }
+    .box h2{
+        font-size: 1.3rem;
+    }
+    .sunrise-content , .sunrise-content{
+        font-size: 1rem;
+    }
+
+
+}
+@media screen and (min-width:500px) and (max-width:930px)  {
+    body{
+        overflow:auto;
+        padding: 0;
+        min-height: 100vh;
+    }
+    main{
+        flex-direction: column;
+        overflow: auto;
+        border-radius: 0;
+        padding: 20px 5%;
+    }
+    .section1{
+        min-height: 100vh;
+    }
+    .section2{
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .todays{
+        flex: 1;
+    }
+    .week{
+        margin-top: 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather-img{
+        height: fit-content;
+        width: 25%;
+    }
+    .week-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   }
+@media screen and (min-width:930px) and (max-width:1040px)  {
+    body{
+       padding: 25px 5%;
+    }   
+   }
+@media screen and (min-width:1040px) and (max-width:1230px)  {
+ body{
+    padding: 25px 10%;
+ }   
+}

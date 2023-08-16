@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather Application</title>
+    <!-- Style file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <div class="search">
+               <form action="" class="searchForm" >
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input class="searchInput" placeholder="Search for places..." type="text">
+                <input class="searchSubmit" type="submit" value="Search">
+               </form>
+            </div>
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" class="weather-img" alt="">
+            <h1><span class="weather">0</span>&deg;<sup>C</sup></h1>
+            <div class="daytime"><span class="day">no data</span><span class="time">16:00</span></div>
+            <hr>
+            <div class="cloud description">
+                no data
+            </div>
+            <div class="main">
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" class="main-img" alt="">
+              <span class=" mainT">  no data</span>
+            </div>
+            <h3 class="city-name">no city found!</h3>
+        </section>
+        <section class="section2">
+            <div class="todays">
+                <p class="todays-title">today's highlights</p>
+                <div class="todays-container">
+                    <div class="box">
+                        <p class="box-title humidity">humidity</p>
+                        <h2 class="box-content humidity-content">0%</h2>
+                    </div>
+                    <div class="box">
+                        <p class="box-title windSpeed">wind status</p>
+                        <h2 class="box-content windSpeed-content">0.00 km/h</h2>
+                    </div>
+                    <div class="box">
+                        <p class="box-title sun">sunrise & sunset</p>
+                        <h2 class="box-content sunrise-content">
+                           <i class="fa-solid fa-sun" style="color: #000000;"></i>
+                            <span class="sunrise">no data</span>
+                        </h2>
+                        <!-- lkdlj -->
+                        <h2 class="box-content sunset-content">
+                            <i class="fa-regular fa-sun" style="color: #000000;"></i>
+                            <span class="sunset">no data PM</span>
+                        </h2>
+                    </div>
+                    <div class="box">
+                        <p class="box-title tempareture">feels like</p>
+                        <h2 class="box-content tempareture-content">0</h2>
+                    </div>
+                    <div class="box">
+                        <p class="box-title airquality-">air quality</p>
+                        <h2 class="box-content airquality-content">
+                            <span class="airquality">00</span>
+                            <i class="fa-solid fa-city" style="color: #000000;"></i>
+                        </h2>
+                    </div>
+                    <div class="box"> 
+                        <p class="box-title ">UV index</p>
+                        <h2 class="box-content uv-content">
+                            <span class="uv">0</span>
+                            <i class="fa-solid fa-temperature-three-quarters" style="color: #000000;"></i>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="week">
+                <p class="todays-title">week</p>
+                <div class="week-container">
+                    <div class="week-box wb1">
+                        <p>mon</p>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png"  alt="">
+                        <p><span>0</span>&deg;</p>
+                    </div>
+                    <div class="week-box wb2">
+                        <p>tue</p>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png"  alt="">
+                        <p><span>0</span>&deg;</p>
+                    </div>
+                    <div class="week-box wb3">
+                        <p>wed</p>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png"  alt="">
+                        <p><span>0</span>&deg;</p>
+                    </div>
+                    <div class="week-box wb4">
+                        <p>thu</p>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png"  alt="">
+                        <p><span>0</span>&deg;</p>
+                    </div>
+                    <div class="week-box wb5">
+                        <p>fri</p>
+                        <img src="https://openweathermap.org/img/wn/02d@2x.png"  alt="">
+                        <p><span>0</span>&deg;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Javascript file -->
+    <script src="index.js"></script>
+</body>
+</html>
