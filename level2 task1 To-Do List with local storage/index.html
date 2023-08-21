@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <!-- Font awesome -->
+     <!-- fontawesome link -->
+     <script src="https://kit.fontawesome.com/abd1c06119.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <title>To-Do List</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2 class="header-text">To-Do List</h2>
+        </header>
+        <section class="list-item-container">
+            <div class="list-items" id="list-items">
+                <!-- task items added from js -->
+            </div>
+            <form class="form-add-item">
+                <input class="newTask" type="text" placeholder="New Task" value="" name="task" required>
+                <input class="form-submit-btn" data-index='' type="submit" name="newTask" value="+">
+            </form>
+        </section>
+    </main>
+    <footer><p class="copyright">copyrights &copy; Meganathan</p></footer>
+    <script src="index.js" ></script>
+</body>
+</html>

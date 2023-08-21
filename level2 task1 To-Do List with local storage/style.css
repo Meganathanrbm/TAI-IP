@@ -1,0 +1,110 @@
+:root{
+    --primary-color:  #b352eb ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dfccfb;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    width: 450px;
+    height: fit-content;
+    /* overflow: hidden; */
+    padding: 15px;
+    
+}
+header{
+    background-color:var(--primary-color);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+}
+.list-item-container{
+    background-color: #fff;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    box-shadow: 5px 7px 5px #00000040;
+}
+.task-container{
+    padding: 10px;
+    min-height: 55px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid #eee;
+    flex-wrap: nowrap;
+}
+.task-container p{
+    word-wrap: break-word;
+    height: fit-content;
+    overflow: hidden;
+    font-size: 1.2rem;
+    width: 80%;
+}
+.task-edit-btn, .task-delete-btn{
+    font-size: 1.2rem;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.task-edit-btn{
+    color: green;
+}
+.task-delete-btn{
+    color:red;
+}
+.form-add-item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-add-item .newTask{
+    border: none;
+    padding: 10px;
+    width: 75%;
+    font-size: 1.1rem;
+}
+.form-add-item .newTask::placeholder{
+    text-align: center;
+}
+.form-add-item .newTask:focus{
+    border: none;
+    outline: none;
+}
+.form-submit-btn{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.copyright{
+    margin-top: 20px;
+    color: gray;
+    text-align: center;
+    text-transform: capitalize;
+}
