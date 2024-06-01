@@ -4,7 +4,7 @@ let items = [
         task:"Wake up at 6:00 AM."
     },
     {
-        id:2,
+        id:2, 
         task:"Brush teeth and wash face."
     },
     {
