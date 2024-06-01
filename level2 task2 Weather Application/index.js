@@ -1,4 +1,4 @@
-const API_KEY = "29464c45f4afb99c42263fbf021d3813" ;    // weather API
+  // weather API
 let searchForm = document.querySelector(".searchForm"); // get search form
 
 // Section 1
